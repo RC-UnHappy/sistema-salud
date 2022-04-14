@@ -276,3 +276,5 @@ $lang['send_email'] = "Send Email";
 
 // Salud
 $lang['salud'] = "Salud";
+$lang['agregar_nuevo_registro'] = "Agregar Nuevo Registro";
+$lang['lista_salud'] = "Lista Registros";
