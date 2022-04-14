@@ -20,7 +20,7 @@
           <div class="col-8">
             <div class="checkbox icheck">
               <label>
-                <input type="checkbox"> Remember Me
+                <input type="checkbox"> Recuerdame
               </label>
             </div>
           </div>
