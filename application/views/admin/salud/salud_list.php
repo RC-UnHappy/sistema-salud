@@ -23,14 +23,15 @@
                 <table id="na_datatable" class="table table-bordered table-striped" width="100%">
                     <thead>
                         <tr>
-                            <th>#<?= trans('id') ?></th>
-                            <th><?= trans('username') ?></th>
-                            <th><?= trans('email') ?></th>
-                            <th><?= trans('mobile_no') ?></th>
-                            <th><?= trans('created_by') ?></th>
-                            <th><?= trans('created_date') ?></th>
-                            <th><?= trans('status') ?></th>
-                            <th width="100" class="text-right"><?= trans('action') ?></th>
+                            <th>#</th>
+                            <th>Cédula</th>
+                            <th>Nombres</th>
+                            <th>Apellidos</th>
+                            <th>Teléfono</th>
+                            <th>Ocupación</th>
+                            <th>Tipo Vivienda</th>
+                            <th>Opciones</th>
+                            
                         </tr>
                     </thead>
                 </table>
@@ -48,60 +49,63 @@
     //---------------------------------------------------
     var table = $('#na_datatable').DataTable({
         "processing": true,
-        "serverSide": false,
-        "ajax": "<?= base_url('admin/users/datatable_json') ?>",
+        "serverSide": true,
+        "ajax": "<?= base_url('admin/salud/list') ?>",
         "order": [
-            [4, 'desc']
+            [1, 'asc']
         ],
         "columnDefs": [{
                 "targets": 0,
-                "name": "id",
-                'searchable': true,
+                "name": "",
+                'searchable': false,
                 'orderable': true
             },
             {
                 "targets": 1,
-                "name": "username",
+                "name": "cedula",
                 'searchable': true,
                 'orderable': true
             },
             {
                 "targets": 2,
-                "name": "email",
+                "name": "nombres",
                 'searchable': true,
                 'orderable': true
             },
             {
                 "targets": 3,
-                "name": "mobile_no",
+                "name": "apellidos",
                 'searchable': true,
                 'orderable': true
             },
             {
                 "targets": 4,
-                "name": "admin_id",
-                'searchable': true,
-                'orderable': true
-            },
-            {
-                "targets": 5,
-                "name": "created_at",
-                'searchable': false,
-                'orderable': false
-            },
-            {
-                "targets": 6,
-                "name": "is_active",
-                'searchable': true,
-                'orderable': true
-            },
-            {
-                "targets": 7,
-                "name": "Action",
+                "name": "telefono",
                 'searchable': false,
                 'orderable': false,
                 'width': '100px'
-            }
+            },
+            {
+                "targets": 5,
+                "name": "ocupacion",
+                'searchable': false,
+                'orderable': false,
+                'width': '100px'
+            },
+            {
+                "targets": 6,
+                "name": "tipo_vivienda",
+                'searchable': false,
+                'orderable': false,
+                'width': '100px'
+            },
+            {
+                "targets": 7,
+                "name": "",
+                'searchable': false,
+                'orderable': false,
+                'width': '100px'
+            },
         ]
     });
 </script>
