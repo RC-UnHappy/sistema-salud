@@ -34,7 +34,7 @@ class Dashboard extends My_Controller
 			redirect(base_url('admin/dashboard/index_2'));
 		} else {
 			// $this->load->view('admin/dashboard/index_2');
-			redirect(base_url('admin/dashboard/index_2'));
+			redirect(base_url('admin/salud/'));
 		}
 
 		$this->load->view('admin/includes/_footer');

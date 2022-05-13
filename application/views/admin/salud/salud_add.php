@@ -76,9 +76,9 @@
                       </div>
                       <div class="col-md-4">
                           <div class="form-group">
-                              <label for="consejo_comunal" class=" control-label">Sexo</label>
+                              <label for="sexo" class=" control-label">Sexo</label>
 
-                              <select name="consejo_comunal" class="form-control">
+                              <select name="sexo" class="form-control">
                                   <option value="">Seleccione</option>
                                   <option value="M">Masculino</option>
                                   <option value="F">Femenino</option>
